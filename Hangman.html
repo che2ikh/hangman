@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="Hangman.css">
+</head>
+
+
+
+
+<body>
+
+
+<div id="final">
+    <div id="end">
+
+
+        <div id="guessed" class="final">You guessed <span id="nbGuessed"></span> word<span id="s">s</span>!</div>
+        <div id="Score" class="final">Score: <span id="scoreSpan"></span></div>
+   <div id="buttons">
+    <button id="new" onclick="reStart()">NEW GAME</button>
+    <button id="replay" onclick="newGame()">REPLAY</button>
+    <button id="leaderBoard" onclick="showLeaderBoard()">LEADERBOARD</button>
+   </div>
+    </div>
+    <div id="leaderboard">
+        <button id="exit" onclick="hideLeaderBoard()">X</button>
+        <div class="final" id="lTitle" >LEADERBOARD</div>
+      <div class="row" id="row">
+            <div class="rank" >Rank</div>
+            <div class="name" id="name">Name</div>
+            <div class="score" >Score</div>
+           </div>
+
+
+        <div id="dataNames">
+           
+        </div>
+    </div>
+  </div>
+
+
+
+
+    <div id="options">
+       
+        <div id="dropdown">
+        <div id="themeBox">THEME</div>
+        <div id="modes">
+
+
+
+
+       
+     <div id="m1">Man </div>
+         
+     <div id="m2">Long Man </div>
+     
+     <div id="m3">Prisoner </div>
+     
+     <div id="m4">Girl</div>
+     </div>
+       
+    </div>
+   
+ 
+       <div id="stats">
+     
+        <div><span id="diff"></span></div>
+        <div>Category:&nbsp;&nbsp; <span id="categ"></span></div><!--edit added space after category-->
+       <!-- <div id="gamesWon">Games Won: <span id="nbGamesWon"></span>/ <span id="totalGames"></span></div>-->
+        <div id="streakC"><img  style="width: 2.5vw; height: 5vh; margin-top: 2vh;" src="streakIcon.png"> <span id="streak"  style="position: relative; bottom: 0.7vh;">0</span></div>
+
+
+        <div id="containerLine">
+            <div class="newgTotal">
+                <span style="font-size: 7px;">Games left</span>
+                <span id="totalGames"></span>
+            </div>
+         <div id="emptyLine" style="width: 20vw;">
+            <div id="lineOfTotalGames" style="width: 0vw;"></div>
+            <div class="circleAfterLine"></div>
+         </div>
+        </div>
+
+
+        <input type="button" id="newgame" value="Restart" >
+        <div> <img id="settingIconID" class="settingIcon" onclick="reStart()" >
+            <a href="startPage.html" id="linkToReStart"></a></div>
+       </div>
+
+
+
+
+    </div>
+   
+
+
+
+
+    <div id="game">
+ 
+
+
+        <div id="left">
+            <!--<div class="wordCount" > Word &nbsp;<span id = "wordCount"></span></div>-->
+            <img src="MANI/MANI6.png" alt="" id="man"></div>
+
+
+
+
+        <div class="right">
+            <div id="hintSentence"> </div>
+            <div class="gameFeatures">
+                <div class="mainCircle" id="mainCircle">
+
+
+                    <div id="toFill"></div>
+                 
+                 
+                 
+                  <div id="secondsLeft"></div>
+                 
+                         
+                      </div>
+                 
+            <input id="hint" value="HINT" type="button">
+            <input id="showLetter" value="Show Letter" type="button">
+                <!--add this-->
+                </div>
+           
+            <div id="word"> </div>
+            <div id="keyboard"></div>
+        </div>
+
+
+
+
+    </div>
+    <div id="btr" class="zero"></div>
+  <div id="btl" class="zero"></div>
+  <div id="easyB" class="zero"></div>
+  <div id="mediumB" class="zero">
+  </div>
+  <div id="hardB" class="zero"></div>
+
+
+ 
+
+
+
+
+    <script type="text/javaScript" src="hangman.js"></script>
+</body>
+
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

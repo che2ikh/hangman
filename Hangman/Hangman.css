@@ -1,0 +1,280 @@
+* {
+  box-sizing: border-box;
+}
+
+#options{
+  display: flex;
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+#dropdown{
+
+  margin-top: 13%;
+  height: 30vh;
+}
+
+
+#modes{ 
+  
+ display: none;
+  margin-top: 0.3%;
+  position:absolute;
+ 
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.37);
+  
+}
+
+#modes div{
+ 
+  width: 15vh;
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+#modes div:hover{
+  background-color: rgba(190, 186, 186, 0.556);
+}
+
+#themeBox{
+  margin-left: 30%;
+  border-radius: 2%;
+  height: 5vh;
+  width: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.o1{
+  background-color: rgb(24, 28, 40);
+}
+
+
+.o2{
+  background-color: rgb(107, 143, 93);
+}
+
+.o3{
+  background-color: rgb(78, 72, 72);
+}
+
+.o4{
+  background-color:  rgb(153, 85, 140);;
+}
+
+
+#stats{
+  width: 50%;
+  height: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: x-large;
+}
+
+#newgame:hover{
+  cursor:pointer;
+}
+
+.s1{
+   
+  color: rgb(134, 148, 189);
+}
+.s2{
+  color: rgb(212, 245, 199);
+ 
+}
+.s3{  
+ color: rgb(207, 203, 203);
+   
+}
+
+.s4{
+  color:rgb(247, 199, 238);
+}
+
+
+
+#game {
+  display: flex;
+  align-items: center;
+}
+
+.g1{
+  background-color:rgb(134, 148, 189);
+}
+
+.g2{
+  background-color: rgb(147, 197, 127);
+}
+.g3{
+  background-color: rgb(153, 144, 144);
+}
+
+.g4{
+  background-color: rgb(201, 156, 193);
+}
+
+#left {
+  width: 45%;
+  height: 100%;
+  margin: 4% 0% 4% 0%;
+}
+
+#left img {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+}
+
+
+
+
+.right {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.letter {
+
+  margin: 1.5%;
+  font-size: calc(0.8em + 0.7vw);
+  border-radius: 10%;
+  min-height: 7vh;
+  min-width: 7vh;
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.letter1{
+  border-bottom: 4px solid  hsl(209, 27%, 30%);
+ border-left: 1px solid hsl(209, 27%, 30%);
+ border-right: 1px solid hsl(209, 27%, 30%);;
+  background-color: hsl(212, 57%, 95%);
+  color: hsl(207, 29%, 43%);
+}
+
+.letter2{
+  border-bottom: 4px solid hsl(116, 66%, 28%);
+  color:hsl(116, 66%, 28%);
+  border-left: 1px solid hsl(116, 66%, 28%);
+  border-right: 1px solid hsl(116, 66%, 28%);
+  background-color: rgb(216, 242, 193);
+}
+
+.letter3{
+  border-bottom: 4px solid rgb(78, 72, 72);
+  color:rgb(78, 72, 72);
+  border-left: 1px solid rgb(78, 72, 72);
+  border-right: 1px solid rgb(78, 72, 72);
+  background-color:  rgb(207, 203, 203);
+}
+
+.letter4{
+  border-bottom: 4px solid  rgb(116, 61, 106);
+  color: rgb(97, 51, 88);
+  border-left: 1px solid rgb(116, 61, 106);
+  border-right: 1px solid rgb(116, 61, 106);
+  background-color: rgb(251, 229, 247);
+
+}
+
+#word {
+  padding: 0%;
+  width: 90%;
+  margin: 2%;
+  align-self: center;
+  height: 5%;
+  margin-bottom: 10%;
+  margin-top: 10%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+}
+
+
+
+
+#keyboard {
+  width: 90%;
+  height: 40vh;
+  align-self: center;
+  margin: 3%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2%;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+
+
+#keyboard button{
+  margin: 1%;
+  height: 19%;
+  width: 8%;
+  font-size: calc(0.8em + 1vw);
+  border-radius: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.kb1{
+  color: hsl(207, 27%, 34%);
+  border:2px solid hsl(207, 27%, 34%);
+  background-color: hsl(212, 57%, 95%);
+}
+
+
+.kb2{
+  color:hsl(116, 66%, 28%);
+  background-color: rgb(216, 242, 193);
+  
+  border:2px solid  hsl(116, 66%, 28%);
+  
+}
+
+.kb3{
+  color:rgb(78, 72, 72);
+  background-color:  rgb(207, 203, 203);
+  
+  border:2px solid  rgb(78, 72, 72);
+}
+
+.kb4{
+  color: rgb(116, 61, 106);
+  border: 2px solid rgb(116, 61, 106);
+  background-color: rgb(251, 229, 247);
+}
+
+
+
+.wrong{
+  color: rgb(179, 47, 47);
+  background-color:  rgb(218, 111, 111);
+  border: 2px solid rgb(179, 47, 47);
+}
+
+.correct{
+  background-Color : rgb(190, 251, 147);
+        color :rgb(64, 125, 20);
+        border: 2px solid rgb(64, 125, 20);
+}
+
